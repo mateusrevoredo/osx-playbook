@@ -1,0 +1,6 @@
+---
+brew_cask_caskroom: '/Applications'
+brew_cask_binarydir: '/Applications'
+brew_packages: []
+cask_packages: []
+brew_taps: []

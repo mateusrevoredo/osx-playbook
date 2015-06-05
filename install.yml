@@ -1,0 +1,139 @@
+---
+# Here we describe every software we may want to install
+- hosts: all
+  roles:
+  - role: packages
+    brew_taps:
+    - homebrew/dupes
+    - homebrew/php
+    - homebrew/versions
+    - thoughtbot/formulae
+    brew_packages:
+    # - ansible
+    # - archey
+    # - bash
+    # - bash-completion
+    # - binutils
+    # - blueutil
+    # - brew-cask
+    # - cmake
+    # - contacts
+    # - coreutils
+    # - ctags
+    # - diffutils
+    # - ed
+    # - ffmpeg
+    # - file-formula
+    # - findutils
+    # - fpp
+    # - fzf
+    # - gawk
+    # - git
+    # - git-flow
+    # - gnu-indent
+    # - gnu-sed
+    # - gnu-tar
+    # - gnu-which
+    # - gnutls
+    # - gpatch
+    # - grep
+    # - gzip
+    # - imagemagick
+    # - jq
+    # - lastpass-cli
+    # - less
+    # - lua
+    # - luajit
+    # - m4
+    # - macvim
+    # - make
+    # - moreutils
+    # - nano
+    # - ncdu
+    - node
+    # - openssh
+    # - phantomjs
+    # - php56-mcrypt
+    # - php56-xdebug
+    # - pick
+    # - python
+    # - rsync
+    # - ruby
+    # - screen
+    # - selecta
+    # - sshpass
+    # - subversion
+    # - terminal-notifier
+    # - the_silver_searcher
+    # - tmux
+    # - unzip
+    # - vim
+    # - watch
+    # - wdiff
+    # - wget
+    # - zsh
+    cask_packages:
+    # - adium
+    # - adobe-reader
+    # - adobe-creative-cloud
+    # - alfred
+    # - appcleaner
+    # - astah-community
+    # - atext
+    # - audacity
+    # - bettertouchtool
+    - caffeine
+    # - calibre
+    # # - Coffitivity
+    # - color-oracle
+    # - controlplane
+    # - cyberduck
+    # - dash
+    # - day-o
+    # - dropbox
+    # - evernote
+    # - firefox
+    # - firefoxdeveloperedition
+    # - firefox-nightly
+    # - flux
+    # - google-chrome
+    # - google-chrome-canary
+    # - google-drive
+    # - inkscape
+    # - iterm2
+    # - karabiner
+    # - keyboard-maestro
+    # - macdown
+    # - macvim
+    # - mendeley-desktop
+    # - mongohub
+    # - nvalt
+    # - openoffice
+    # - phpstorm
+    # - rescuetime
+    # - seil
+    # - sequel-pro
+    # - skim
+    # - skitch
+    # - skype
+    # - slack
+    # - slate
+    # - sourcetree
+    # - spotify
+    # - spotify-notifications
+    # - steam
+    # - sublime-text3
+    # - mactex
+    # - sublime-text3
+    # - the-unarchiver
+    # - transmission
+    # - virtualbox
+    # - vagrant
+    # - xmind
+  - role: ruby
+    ruby_gems:
+      - sass
+  - role: node
+    nodejs_packages:
+      - bower
+      - yo

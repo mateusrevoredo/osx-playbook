@@ -1,0 +1,2 @@
+---
+dotfiles: "/Users/{{ ansible_user_id }}/.dotfiles"

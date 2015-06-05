@@ -1,0 +1,54 @@
+---
+# Configure your freshly installed software
+- hosts: all
+  roles:
+  - role: repository
+    clone_url: https://github.com/mateusrevoredo/dotfiles
+    dest: "{{ dotfiles }}"
+  - role: filesystem
+    custom_dotfiles:
+      sublime:
+        source: "sublime"
+        destination: "/Users/{{ ansible_user_id }}/Library/Application\ Support/Sublime\ Text\ 3/Packages/User"
+      karabiner:
+        source: "karabiner"
+        destination: "/Users/{{ ansible_user_id }}/Library/Application\ Support/Karabiner"  
+    regular_dotfiles:
+      zsh:
+        source: "zsh/zshconfig"
+        destination: ".zsh"
+      vimrc:
+        source: "vimrc"
+        destination: ".vimrc"
+      vim:
+        source: "vim"
+        destination: ".vim"
+      tmux:
+        source: "tmux.conf"
+        destination: ".tmux.conf"
+      lolcommits:
+        source: "lolcommits"
+        destination: ".lolcommits"
+      slate:
+        source: "slate"
+        destination: ".slate"
+      zshrc:
+        source: "zshrc"
+        destination: ".zshrc"
+      # ohmyzshcustom:
+      #   source: "zsh/oh-my-zsh/custom"
+      #   destination: ".oh-my-zsh/custom"
+      zgen:
+        source: "zgen"
+        destination: ".zgen"
+      gitconfig:
+        source: "gitconfig"
+        destination: ".gitconfig"
+      gitignoreglobal:
+        source: "gitignore_global"
+        destination: ".gitignore_global"
+      gittemplates:
+        source: "git-templates"
+        destination: ".git-templates"
+
+

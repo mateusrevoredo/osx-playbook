@@ -1,0 +1,8 @@
+---
+- name: Symlink regular path configuration files
+  file: state=link src={{ dotfiles }}/{{ item.value.source }} dest=/Users/{{ ansible_user_id }}/{{ item.value.destination }} force=yes owner={{ ansible_user_id }}
+  with_dict: regular_dotfiles
+
+- name: Symlink custom path configuration files
+  file: src={{ dotfiles }}/{{ item.value.source }} dest={{ item.value.destination }} force=yes owner={{ ansible_user_id }} state=link
+  with_dict: custom_dotfiles

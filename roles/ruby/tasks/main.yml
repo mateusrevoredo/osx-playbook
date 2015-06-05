@@ -1,0 +1,6 @@
+---
+- name: Install ruby gems
+  gem: name={{ item }} state=latest user_install=no
+  sudo: yes
+  sudo_user: mateusrevoredo
+  with_items: ruby_gems

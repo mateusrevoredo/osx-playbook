@@ -1,0 +1,5 @@
+---
+- name: Clone the git repository
+  git: "repo={{ clone_url }} dest={{ dest }} version=master accept_hostkey=yes"
+  notify: configure build
+
