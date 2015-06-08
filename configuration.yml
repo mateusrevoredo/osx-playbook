@@ -3,9 +3,15 @@
 - hosts: all
   roles:
   - role: repository
-    clone_url: https://github.com/mateusrevoredo/dotfiles
-    dest: "{{ dotfiles }}"
+    git_repos:
+      dotfiles:
+        clone_url: https://github.com/mateusrevoredo/dotfiles
+        dest: "{{ dotfiles }}"
+      powerline:
+        clone_url: https://github.com/powerline/fonts.git
+        dest: /Users/{{ ansible_user_id }}/.powerline
   - role: filesystem
+    # Dotfiles to be symlinked in any other folder
     custom_dotfiles:
       sublime:
         source: "sublime"
@@ -13,6 +19,7 @@
       karabiner:
         source: "karabiner"
         destination: "/Users/{{ ansible_user_id }}/Library/Application\ Support/Karabiner"  
+    # Dotfiles to be symlinked in the home directory ~/
     regular_dotfiles:
       zsh:
         source: "zsh/zshconfig"

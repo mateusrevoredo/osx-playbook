@@ -17,7 +17,3 @@
   homebrew: name={{ item.pkg }} install_options={{ item.opts }} state={{ item.state|default("latest") }}
   with_items: brew_pkg_with_opts
   when: brew_pkg_with_opts is defined
-
-- name: Install ruby gems
-  gem: name={{ item }} state=latest
-  with_items: ruby_gems

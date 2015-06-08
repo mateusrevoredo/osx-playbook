@@ -118,6 +118,7 @@
     # - skype
     # - slack
     # - slate
+    # - smoothmouse
     # - sourcetree
     # - spotify
     # - spotify-notifications
@@ -137,3 +138,6 @@
     nodejs_packages:
       - bower
       - yo
+  - role: composer
+    composer_packages:
+      - phpmd/phpmd

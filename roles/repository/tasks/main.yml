@@ -1,5 +1,5 @@
 ---
 - name: Clone the git repository
-  git: "repo={{ clone_url }} dest={{ dest }} version=master accept_hostkey=yes"
-  notify: configure build
+  git: "repo={{ item.value.clone_url }} dest={{ item.value.dest }} version=master accept_hostkey=yes"
+  with_dict: git_repos
 
