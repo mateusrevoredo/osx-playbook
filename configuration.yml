@@ -2,6 +2,7 @@
 # Configure your freshly installed software
 - hosts: all
   roles:
+
   - role: repository
     git_repos:
       dotfiles:
@@ -10,15 +11,37 @@
       powerline:
         clone_url: https://github.com/powerline/fonts.git
         dest: /Users/{{ ansible_user_id }}/.powerline
+
+  - role: zsh
+    osx_login_shell: /usr/local/bin/zsh
+
   - role: filesystem
     # Dotfiles to be symlinked in any other folder
-    custom_dotfiles:
+    custom_links:
       sublime:
         source: "sublime"
         destination: "/Users/{{ ansible_user_id }}/Library/Application\ Support/Sublime\ Text\ 3/Packages/User"
-      karabiner:
-        source: "karabiner"
-        destination: "/Users/{{ ansible_user_id }}/Library/Application\ Support/Karabiner"  
+      karabiner-customization:
+        source: "karabiner/private.xml"
+        destination: "/Users/{{ ansible_user_id }}/Library/Application\ Support/Karabiner/private.xml"
+      karabiner-preferences:
+        source: "karabiner/org.pqrs.Karabiner.plist"
+        destination: "/Users/{{ ansible_user_id }}/Library/Preferences/org.pqrs.Karabiner.plist"
+      seil:
+        source: "seil/org.pqrs.Seil.plist"
+        destination: "/Users/{{ ansible_user_id }}/Library/Preferences/org.pqrs.Seil.plist"
+      vlc:
+        source: "vlc"
+        destination: "/Users/{{ ansible_user_id }}/Library/Preferences/org.videolan.vlc"
+      day-o:
+        source: "day-o/com.shauninman.Day-O.plist"
+        destination: "/Users/{{ ansible_user_id }}/Library/Preferences/com.shauninman.Day-O.plist"
+      iterm2:
+        source: "iterm2/com.googlecode.iterm2.plist"
+        destination: "/Users/{{ ansible_user_id }}/Library/Preferences/com.googlecode.iterm2.plist"
+      skim:
+        source: "skim/net.sourceforge.skim-app.skim.plist"
+        destination: "/Users/{{ ansible_user_id }}/Library/Preferences/net.sourceforge.skim-app.skim.plist"
     # Dotfiles to be symlinked in the home directory ~/
     regular_dotfiles:
       zsh:

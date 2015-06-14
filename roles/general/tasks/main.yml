@@ -1,0 +1,8 @@
+---
+- name: Load Fuzzy finder settings
+  shell: >
+    yes | /usr/local/Cellar/fzf/HEAD/install
+
+- name: Install Powerline Fonts
+  shell: >
+    yes | /usr/local/Cellar/fzf/HEAD/install

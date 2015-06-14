@@ -8,6 +8,7 @@
     - homebrew/php
     - homebrew/versions
     - thoughtbot/formulae
+    - caskroom/versions
     brew_packages:
     # - ansible
     # - archey
@@ -26,7 +27,7 @@
     # - file-formula
     # - findutils
     # - fpp
-    # - fzf
+    - fzf
     # - gawk
     # - git
     # - git-flow
@@ -71,7 +72,7 @@
     # - watch
     # - wdiff
     # - wget
-    # - zsh
+    - zsh
     cask_packages:
     # - adium
     # - adobe-reader
@@ -89,7 +90,7 @@
     # - controlplane
     # - cyberduck
     # - dash
-    # - day-o
+    - day-o
     # - dropbox
     # - evernote
     # - firefox
@@ -100,8 +101,8 @@
     # - google-chrome-canary
     # - google-drive
     # - inkscape
-    # - iterm2
-    # - karabiner
+    - iterm2
+    - karabiner
     # - keyboard-maestro
     # - macdown
     # - macvim
@@ -111,9 +112,9 @@
     # - openoffice
     # - phpstorm
     # - rescuetime
-    # - seil
+    - seil
     # - sequel-pro
-    # - skim
+    - skim
     # - skitch
     # - skype
     # - slack
@@ -123,12 +124,13 @@
     # - spotify
     # - spotify-notifications
     # - steam
-    # - sublime-text3
+    - sublime-text3
     # - mactex
     # - sublime-text3
     # - the-unarchiver
     # - transmission
     # - virtualbox
+    # - vlc
     # - vagrant
     # - xmind
   - role: ruby
