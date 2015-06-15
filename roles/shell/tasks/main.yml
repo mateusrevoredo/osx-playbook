@@ -1,0 +1,9 @@
+---
+- name: Load Fuzzy finder terminal extensions
+  shell: ./install chdir=/usr/local/Cellar/fzf/HEAD
+
+- name: Install Powerline Fonts
+  shell: ./install.sh chdir="{{ tempdir.stdout }}/powerline"
+
+- name: Install Meteor
+  shell: curl https://install.meteor.com/ | sh

@@ -1,6 +1,0 @@
----
-- name: Load Fuzzy finder settings
-  shell: ./install chdir=/usr/local/Cellar/fzf/HEAD
-
-- name: Install Powerline Fonts
-  shell: ./install.sh chdir="{{ tempdir.stdout }}/powerline"

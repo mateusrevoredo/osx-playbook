@@ -17,10 +17,10 @@
     # - binutils
     # - blueutil
     # - brew-cask
-    # - cmake
+    - cmake
     # - contacts
     # - coreutils
-    # - ctags
+    - ctags
     # - diffutils
     # - ed
     # - ffmpeg

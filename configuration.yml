@@ -46,6 +46,9 @@
       skim:
         source: "skim/net.sourceforge.skim-app.skim.plist"
         destination: "/Users/{{ ansible_user_id }}/Library/Preferences/net.sourceforge.skim-app.skim.plist"
+      # subl:
+      #   source: "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+      #   destination: "/usr/local/bin/subl"
     # Dotfiles to be symlinked in the home directory ~/
     regular_dotfiles:
       zsh:
@@ -85,7 +88,7 @@
         source: "git-templates"
         destination: ".git-templates"
 
-  - role: general
+  - role: shell
 
   - role: temporary-folder
     create_temp_dir: false
