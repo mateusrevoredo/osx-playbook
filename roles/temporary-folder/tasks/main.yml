@@ -1,0 +1,9 @@
+---
+- name: Create Temporary Directory
+  command: mktemp -d -t 'ansible'
+  register: tempdir
+  when: create_temp_dir
+
+- name: Remove Temporary Directory
+  file: path={{ tempdir.stdout }} state=absent
+  when: delete_temp_dir

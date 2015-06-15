@@ -3,6 +3,10 @@
 - hosts: all
   roles:
 
+  - role: temporary-folder
+    create_temp_dir: true
+    delete_temp_dir: false
+
   - role: repository
     git_repos:
       dotfiles:
@@ -10,7 +14,7 @@
         dest: "{{ dotfiles }}"
       powerline:
         clone_url: https://github.com/powerline/fonts.git
-        dest: /Users/{{ ansible_user_id }}/.powerline
+        dest: "{{tempdir.stdout}}/powerline"
 
   - role: zsh
     osx_login_shell: /usr/local/bin/zsh
@@ -18,12 +22,12 @@
   - role: filesystem
     # Dotfiles to be symlinked in any other folder
     custom_links:
-      sublime:
-        source: "sublime"
-        destination: "/Users/{{ ansible_user_id }}/Library/Application\ Support/Sublime\ Text\ 3/Packages/User"
-      karabiner-customization:
-        source: "karabiner/private.xml"
-        destination: "/Users/{{ ansible_user_id }}/Library/Application\ Support/Karabiner/private.xml"
+      # sublime:
+      #   source: "sublime"
+      #   destination: "/Users/{{ ansible_user_id }}/Library/Application\ Support/Sublime\ Text\ 3/Packages/User"
+      # karabiner-customization:
+      #   source: "karabiner/private.xml"
+      #   destination: "/Users/{{ ansible_user_id }}/Library/Application\ Support/Karabiner/private.xml"
       karabiner-preferences:
         source: "karabiner/org.pqrs.Karabiner.plist"
         destination: "/Users/{{ ansible_user_id }}/Library/Preferences/org.pqrs.Karabiner.plist"
@@ -81,4 +85,8 @@
         source: "git-templates"
         destination: ".git-templates"
 
+  - role: general
 
+  - role: temporary-folder
+    create_temp_dir: false
+    delete_temp_dir: true

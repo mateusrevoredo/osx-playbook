@@ -27,7 +27,8 @@
     # - file-formula
     # - findutils
     # - fpp
-    - fzf
+    # - fzf
+    - { pkg: "fzf" , state: "head" }
     # - gawk
     # - git
     # - git-flow
