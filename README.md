@@ -41,7 +41,21 @@ defaults write com.apple.dock largesize -int 52
 
 # Zoom: Options… > Use scroll wheel with modifier keys to zoom: on
 defaults write com.apple.universalaccess 'closeViewScrollWheelToggle' -bool true
+
 # Zoom: Options… > Use scroll wheel with modifier keys to zoom: ^ [control]
 defaults write com.apple.universalaccess 'HIDScrollZoomModifierMask' -int 262144
+
 # Zoom: Options… > Use keyboard shortcuts to zoom: on
 defaults write com.apple.universalaccess 'closeViewHotkeysEnabled' -bool true
+
+#To show removable media (cards, etc):
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
+
+#To show external hard drives (USB, Thunderbolt, firewire, etc):
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+
+#To show mounted servers (AFP, SMB, NFS, etc):
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
+
+#To show internal hard drives:
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
