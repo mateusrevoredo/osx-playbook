@@ -34,6 +34,8 @@
 
 brew phantomjs required?
 
+1. Enable accessibility for alfred 2, atext, bettertouchtool, dash, chrome, karabiner, keyboard maestro, skype, slate
+
 # OSX Settings
 
 # Icon size of Dock items
