@@ -31,6 +31,7 @@
 1. Install brew packages 
 1. npm -g install npm
 1. Install node packages 
+1. Remove applications from login
 
 brew phantomjs required?
 
