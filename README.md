@@ -27,6 +27,10 @@
   8. Twitter
   9. Xcode
 
+1. Agree to xcode terms command line
+1. Install brew packages 
+
+brew phantomjs required?
 
 # OSX Settings
 
