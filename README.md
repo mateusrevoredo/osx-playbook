@@ -29,6 +29,8 @@
 
 1. Agree to xcode terms command line
 1. Install brew packages 
+1. npm -g install npm
+1. Install node packages 
 
 brew phantomjs required?
 
@@ -63,3 +65,5 @@ defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
 
 #To show internal hard drives:
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
+
+defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>15000</integer><key>KeyboardLayout Name</key><string>USInternational-PC</string></dict>'
