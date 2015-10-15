@@ -86,3 +86,8 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 	### Spotlight window keyboard shortcut: none
 	/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.symbolichotkeys.plist" -c 'Delete AppleSymbolicHotKeys:65' > /dev/null 2>&1
 	/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.symbolichotkeys.plist" -c 'Add AppleSymbolicHotKeys:65:enabled bool false'
+	
+#disable guest access
+defaults write com.apple.loginwindow GuestEnabled -bool false
+defaults write com.apple.AppleFileServer guestAccess -bool false
+defaults write com.apple.smb.server AllowGuestAccess -bool false
