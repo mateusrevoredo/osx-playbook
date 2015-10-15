@@ -13,6 +13,7 @@
 1. Configure Google Chrome extensions
 1. Disable spotlight Command Space key to avoid conflicts with alfred
 1. Install node packages
+1. Set zsh as default - chsh -s $(which zsh) 
 
 1. Install apps via Mac App Store (US)
   1. Coffitivity
