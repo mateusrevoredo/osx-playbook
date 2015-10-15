@@ -7,16 +7,14 @@
 1. Enable csrutil
 1. Install homebrew cask
 1. Add Brew taps
+2. Brew cask packages
+  1.Change caffeine icon to retina  
 1. Sync Google Chrome
 1. Configure Google Chrome extensions
-1. Install Smooth Mous (check if it has a defaults write)
-  1. Mouse 2 - Speed
-  2. Trackpad 7 - Speed
-1. Link .gauth file
 1. Disable spotlight Command Space key to avoid conflicts with alfred
 1. Install node packages
 
-1. Install apps via Mac App Store
+1. Install apps via Mac App Store (US)
   1. Coffitivity
   2. iMovie
   3. iPhoto
@@ -31,6 +29,11 @@
 1. Install brew packages 
 1. npm -g install npm
 1. Install node packages 
+1. Link apps to their respective folder
+  1. Keyboard Maestro
+  2. Alfred
+  3. aText
+
 1. Remove applications from login
 
 brew phantomjs required?
