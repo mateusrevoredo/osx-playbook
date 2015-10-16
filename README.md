@@ -38,6 +38,7 @@
 1. Remove applications from login
 1. If on macbook air, symlink dotfile folder to .dotfiles in home  
 1. Install powerline fonts
+1. Configure powerline font on iterm 
 
 brew phantomjs required?
 
