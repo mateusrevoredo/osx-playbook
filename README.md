@@ -42,6 +42,8 @@
 
 1. Install popcorntime
 1. Change permission to allow instalation of apps from anywhere 
+1. Wallpaper folder, 30 min random
+1. Create 3 desktops(4 total) with wallpapers on them 
 
 1. Set wallpaper folder
 brew phantomjs required?
