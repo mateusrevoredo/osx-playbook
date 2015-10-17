@@ -40,6 +40,9 @@
 1. Install powerline fonts
 1. Configure powerline font on iterm 
 
+1. Install popcorntime
+1. Change permission to allow instalation of apps from anywhere 
+
 brew phantomjs required?
 
 1. Enable accessibility for alfred 2, atext, bettertouchtool, dash, chrome, karabiner, keyboard maestro, skype, slate
