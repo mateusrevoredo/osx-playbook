@@ -43,6 +43,7 @@
 1. Install popcorntime
 1. Change permission to allow instalation of apps from anywhere 
 
+1. Set wallpaper folder
 brew phantomjs required?
 
 1. Enable accessibility for alfred 2, atext, bettertouchtool, dash, chrome, karabiner, keyboard maestro, skype, slate
