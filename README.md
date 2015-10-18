@@ -112,4 +112,7 @@ defaults write com.apple.Dock autohide -bool true
 #Disable auto correction
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 	
+#Disable interface sound effects
+defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
+
 #disable guest access???????
