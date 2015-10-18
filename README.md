@@ -48,6 +48,7 @@
 1. Install atom packages from file "apm install --packages-file atom"
 1. Gem install bundler
 1. bundle install system wide 
+1. generate ssh key ssh-keygen -t rsa -b 4096 -C "your_email@example.com" and authorize on github 
 
 1. Set wallpaper folder
 brew phantomjs required?
