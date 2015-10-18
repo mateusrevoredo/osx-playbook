@@ -108,5 +108,8 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 #Autohide dock
 defaults write com.apple.Dock autohide -bool true
+
+#Disable auto correction
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 	
 #disable guest access???????
