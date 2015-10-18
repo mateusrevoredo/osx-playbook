@@ -39,6 +39,7 @@
 1. If on macbook air, symlink dotfile folder to .dotfiles in home  
 1. Install powerline fonts
 1. Configure powerline font on iterm 
+1. Install source code pro
 
 1. Install popcorntime
 1. Change permission to allow instalation of apps from anywhere 
