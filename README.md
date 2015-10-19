@@ -138,4 +138,7 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 #Allow apps downloaded from anywhere
 sudo defaults write /Library/Preferences/com.apple.security GKAutoRearm -bool NO
 
+# Don't show mirroring options in the menu bar when available
+defaults write com.apple.airplay showInMenuBarIfPresent -bool false
+
 #disable guest access???????
