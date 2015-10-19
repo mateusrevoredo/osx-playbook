@@ -123,4 +123,19 @@ defaults write com.apple.dock mru-spaces -bool false
 defaults write com.apple.dock wvous-br-corner -int 5
 defaults write com.apple.dock wvous-br-modifier -int 0
 
+# Set preferred language order
+defaults write -g AppleLanguages -array "en-US" en
+
+#Currency
+defaults write NSGlobalDomain AppleLocale -string "en_US@currency=BRL"
+defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
+defaults write NSGlobalDomain AppleMetricUnits -bool true
+
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+#Allow apps downloaded from anywhere
+sudo defaults write /Library/Preferences/com.apple.security GKAutoRearm -bool NO
+
 #disable guest access???????
