@@ -162,8 +162,4 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 #Enable right click on mouse
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
 
-# Two finger horizontal swipe
-# 2 = Swipe between full screen apps with two fingers, swipe between pages with one finger (Default Mode)
-defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerHorizSwipeGesture -int 2
-
 #disable guest access???????
