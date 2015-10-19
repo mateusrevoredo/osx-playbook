@@ -155,4 +155,8 @@ sudo /usr/bin/pmset -c sleep 10
 # Display sleep: 10 min
 sudo /usr/bin/pmset -c displaysleep 10
 
+# Enable full keyboard access for all controls
+# (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
 #disable guest access???????
