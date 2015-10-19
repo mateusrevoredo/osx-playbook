@@ -119,4 +119,8 @@ defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
+# Bottom right screen corner → Start Screen Saver
+defaults write com.apple.dock wvous-br-corner -int 5
+defaults write com.apple.dock wvous-br-modifier -int 0
+
 #disable guest access???????
