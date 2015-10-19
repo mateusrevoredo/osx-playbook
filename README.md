@@ -141,4 +141,10 @@ sudo defaults write /Library/Preferences/com.apple.security GKAutoRearm -bool NO
 # Don't show mirroring options in the menu bar when available
 defaults write com.apple.airplay showInMenuBarIfPresent -bool false
 
+# Computer sleep: 10 min
+sudo /usr/bin/pmset -b sleep 10
+
+# Display sleep: 10 min
+sudo /usr/bin/pmset -b displaysleep 10
+
 #disable guest access???????
