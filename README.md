@@ -43,7 +43,8 @@
 
 1. Install popcorntime
 1. Change permission to allow instalation of apps from anywhere 
-1. Wallpaper folder, 30 min random
+1. Wallpaper folder, 30 min, random
+1. screensave sliding panel, shuffle order, 20 minutes, show with clock 
 1. Create 3 desktops(4 total) with wallpapers on them 
 1. Install atom packages from file "apm install --packages-file atom"
 1. Gem install bundler
@@ -114,5 +115,8 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 	
 #Disable interface sound effects
 defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
+
+# Don’t automatically rearrange Spaces based on most recent use
+defaults write com.apple.dock mru-spaces -bool false
 
 #disable guest access???????
