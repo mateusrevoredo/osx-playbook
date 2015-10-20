@@ -50,7 +50,8 @@
 1. Gem install bundler
 1. bundle install system wide 
 1. generate ssh key ssh-keygen -t rsa -b 4096 -C "your_email@example.com" and authorize on github 
-1. set modifier keys caps-lock on both keyboards to none 
+1. set modifier keys caps-lock on both keyboards to none (manually for now)  
+1. check all mouse/keyboard gestures (manually for now) 
 
 1. Set wallpaper folder
 brew phantomjs required?
