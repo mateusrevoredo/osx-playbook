@@ -52,6 +52,9 @@
 1. generate ssh key ssh-keygen -t rsa -b 4096 -C "your_email@example.com" and authorize on github 
 1. set modifier keys caps-lock on both keyboards to none (manually for now)  
 1. check all mouse/keyboard gestures (manually for now) 
+1. disable icloud sync for photos, mail, keychain, back to my mac
+1. set user profile avatar
+2. 
 
 1. Set wallpaper folder
 brew phantomjs required?
@@ -161,7 +164,16 @@ sudo /usr/bin/pmset -c displaysleep 10
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-#Enable right click on mouse
-defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+# Lower the volume for alert sound
+defaults write com.apple.systemsound 'com.apple.sound.beep.volume' -float 0
+
+# Enable fast user switching
+sudo defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool YES
+
+# Allow guests to login to this computer
+sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool false
 
 #disable guest access???????
