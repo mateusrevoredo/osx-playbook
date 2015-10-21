@@ -54,7 +54,9 @@
 1. check all mouse/keyboard gestures (manually for now) 
 1. disable icloud sync for photos, mail, keychain, back to my mac
 1. set user profile avatar
-2. 
+1. display login window as list of users
+1. show fast user switching menu
+1. mac app store free downloads save password, purchases after 15 minutes 
 
 1. Set wallpaper folder
 brew phantomjs required?
