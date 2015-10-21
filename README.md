@@ -25,6 +25,9 @@
   7. Pocket
   8. Twitter
   9. Xcode
+1. Install apps via Mac App Store (BR)
+  1. Reeder 
+
 
 1. Agree to xcode terms command line
 1. Install brew packages 
