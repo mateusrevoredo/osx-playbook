@@ -57,6 +57,7 @@
 1. display login window as list of users
 1. show fast user switching menu
 1. mac app store free downloads save password, purchases after 15 minutes 
+1. Install adobe ICC color profiles 
 
 1. Set wallpaper folder
 brew phantomjs required?
