@@ -181,4 +181,7 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -boo
 # Remove clock from menubar
 defaults write com.apple.systemuiserver 'menuExtras' -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/User.menu"
 
+# Translucent hidden dock applications
+defaults write com.apple.Dock showhidden -bool YES
+
 #disable guest access???????
