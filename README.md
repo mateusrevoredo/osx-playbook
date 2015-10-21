@@ -178,4 +178,7 @@ sudo defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabl
 # Allow guests to login to this computer
 sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool false
 
+# Remove clock from menubar
+defaults write com.apple.systemuiserver 'menuExtras' -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/User.menu"
+
 #disable guest access???????
