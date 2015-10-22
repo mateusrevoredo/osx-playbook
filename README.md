@@ -62,6 +62,12 @@
 1. mac app store free downloads save password, purchases after 15 minutes 
 1. Install adobe ICC color profiles 
 1. Install java for osx https://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US 
+1. Install meteor curl https://install.meteor.com/ | sh
+1. Add vagrant to sudoers to avoid nfs password
+Cmnd_Alias VAGRANT_EXPORTS_ADD = /usr/bin/tee -a /etc/exports
+Cmnd_Alias VAGRANT_NFSD = /sbin/nfsd restart
+Cmnd_Alias VAGRANT_EXPORTS_REMOVE = /usr/bin/sed -E -e /*/ d -ibak /etc/exports
+%admin ALL=(root) NOPASSWD: VAGRANT_EXPORTS_ADD, VAGRANT_NFSD, VAGRANT_EXPORTS_REMOVE
 
 1. Set wallpaper folder
 brew phantomjs required?
