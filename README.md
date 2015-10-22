@@ -70,7 +70,9 @@ Cmnd_Alias VAGRANT_EXPORTS_REMOVE = /usr/bin/sed -E -e /*/ d -ibak /etc/exports
 %admin ALL=(root) NOPASSWD: VAGRANT_EXPORTS_ADD, VAGRANT_NFSD, VAGRANT_EXPORTS_REMOVE
 
 
+#Macbook air steps
 1. If on macbook air, move pictures folder to external hd and symlink to dropbox
+1. Move virtualbox default machine folder to external HD 
 1. Copy dotfiles folder to local .dotfiles and symlink to dropbox (When pc boots configuration must be there)
 1. link vagrant.d to external hd
 1. copy wallpaper folder to local .wallpapers and symlink to dropbox (When pc boots configuration must be there)
