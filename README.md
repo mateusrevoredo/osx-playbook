@@ -1,7 +1,7 @@
 #Raw Steps (Still needs LOTS of refinement) 
 
 1. Disable csrutil
-1. Install Xcode Command Line Tools
+1. Install Xcode Command Line Tools xcode-select --install
 1. Patch RGB Display
 1. Install Homebrew
 1. Enable csrutil
