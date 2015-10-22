@@ -61,6 +61,7 @@
 1. show fast user switching menu
 1. mac app store free downloads save password, purchases after 15 minutes 
 1. Install adobe ICC color profiles 
+1. Install java for osx https://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US 
 
 1. Set wallpaper folder
 brew phantomjs required?
