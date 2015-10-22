@@ -73,8 +73,10 @@ Cmnd_Alias VAGRANT_EXPORTS_REMOVE = /usr/bin/sed -E -e /*/ d -ibak /etc/exports
 1. If on macbook air, move pictures folder to external hd and symlink to dropbox
 1. Copy dotfiles folder to local .dotfiles and symlink to dropbox (When pc boots configuration must be there)
 1. link vagrant.d to external hd
+1. copy wallpaper folder to local .wallpapers and symlink to dropbox (When pc boots configuration must be there)
 
 1. Set wallpaper folder
+
 brew phantomjs required?
 
 1. Enable accessibility for alfred 2, atext, bettertouchtool, dash, chrome, karabiner, keyboard maestro, skype, slate
