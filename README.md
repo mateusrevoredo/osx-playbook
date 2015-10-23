@@ -69,6 +69,8 @@ Cmnd_Alias VAGRANT_NFSD = /sbin/nfsd restart
 Cmnd_Alias VAGRANT_EXPORTS_REMOVE = /usr/bin/sed -E -e /*/ d -ibak /etc/exports
 %admin ALL=(root) NOPASSWD: VAGRANT_EXPORTS_ADD, VAGRANT_NFSD, VAGRANT_EXPORTS_REMOVE
 
+1. gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+1. \curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled 
 
 #Macbook air steps
 1. If on macbook air, move pictures folder to external hd and symlink to dropbox
