@@ -43,6 +43,7 @@
 1. Install powerline fonts
 1. Configure powerline font on iterm 
 1. Install source code pro
+1. Install vpn software
 
 1. Install popcorntime
 1. Change permission to allow instalation of apps from anywhere 
