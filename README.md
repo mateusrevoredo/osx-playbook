@@ -78,6 +78,7 @@ Cmnd_Alias VAGRANT_EXPORTS_REMOVE = /usr/bin/sed -E -e /*/ d -ibak /etc/exports
 1. copy wallpaper folder to local .wallpapers and symlink to dropbox (When pc boots configuration must be there)
 
 1. Set wallpaper folder
+2. Download https://github.com/JohnCoates/Aerial and set as my screensaver
 
 brew phantomjs required?
 
