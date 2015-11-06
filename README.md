@@ -31,6 +31,7 @@
 
 1. Agree to xcode terms command line
 1. Install brew packages 
+1. Enable fzf extensions with /usr/local/opt/fzf/install 
 1. npm -g install npm
 1. Install node packages 
 1. Link apps to their respective folder
