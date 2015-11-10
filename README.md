@@ -71,6 +71,8 @@ Cmnd_Alias VAGRANT_NFSD = /sbin/nfsd restart
 Cmnd_Alias VAGRANT_EXPORTS_REMOVE = /usr/bin/sed -E -e /*/ d -ibak /etc/exports
 %admin ALL=(root) NOPASSWD: VAGRANT_EXPORTS_ADD, VAGRANT_NFSD, VAGRANT_EXPORTS_REMOVE
 
+1. Install plugin: vagrant plugin install vagrant-vbox-snapshot
+
 #Macbook air steps
 1. If on macbook air, move pictures folder to external hd and symlink to dropbox
 1. Move virtualbox default machine folder to external HD 
