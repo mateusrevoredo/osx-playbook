@@ -72,6 +72,7 @@ Cmnd_Alias VAGRANT_EXPORTS_REMOVE = /usr/bin/sed -E -e /*/ d -ibak /etc/exports
 %admin ALL=(root) NOPASSWD: VAGRANT_EXPORTS_ADD, VAGRANT_NFSD, VAGRANT_EXPORTS_REMOVE
 
 1. Install plugin: vagrant plugin install vagrant-vbox-snapshot
+2. Install plugin: vagrant plugin install vagrant-hostsupdater
 
 #Macbook air steps
 1. If on macbook air, move pictures folder to external hd and symlink to dropbox
