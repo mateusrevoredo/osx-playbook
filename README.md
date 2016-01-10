@@ -14,6 +14,8 @@
 1. Install node packages
 1. Set zsh as default shell /usr/local/bin/zsh
 1. show volume on menubar 
+1. download and install windows virtual machines from https://dev.windows.com/en-us/microsoft-edge/tools/vms/mac/ 
+
 
 1. Install apps via Mac App Store (US)
   1. Coffitivity
@@ -26,7 +28,8 @@
   8. Twitter
   9. Xcode
 1. Install apps via Mac App Store (BR)
-  1. Reeder 
+  1. Reeder
+  2. DayOne
 
 
 1. Agree to xcode terms command line
