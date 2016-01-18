@@ -27,6 +27,7 @@
   7. Pocket
   8. Twitter
   9. Xcode
+  10. Telegram
 1. Install apps via Mac App Store (BR)
   1. Reeder
   2. DayOne
